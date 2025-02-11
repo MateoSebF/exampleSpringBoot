@@ -29,6 +29,7 @@ public class MovementController {
         if (movement.isRight()) {
             position.setX(position.getX() + SPEED);
         }
+        System.out.println(movement);
         // Se podría agregar un pequeño retardo simulado si es necesario:
         Thread.sleep(10);
         return position;

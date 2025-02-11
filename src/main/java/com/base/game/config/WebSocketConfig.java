@@ -13,7 +13,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // El cliente se conectará a /game y se usará SockJS como fallback
-        registry.addEndpoint("/game").setAllowedOrigins("*").withSockJS();
+        registry.addEndpoint("/game").setAllowedOrigins("*");
     }
 
     @Override
